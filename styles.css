@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    margin: 20px;
+    color: #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #40c4ff;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    height: 400px;
+}
+
+.description {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: #b0b0b0;
+    flex-grow: 1;
+}
+
+
+.card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    filter: brightness(0.85);
+}
+
+.city-name {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #40c4ff;
+}
+
+.like-btn {
+    background-color: #315779;
+    border: 1px solid rgb(0, 0, 25);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn:hover {
+    background-color: #284864;
+}
+
+.highlighted {
+    border: 1px solid #40c4ff;
+    background-color: #292929;
+}
+
+.liked {
+    box-shadow: 0 0 10px 3px #00796b;
+    background-color: #293e49;
+}
